@@ -56,7 +56,7 @@ bilan rostlanadi.
    Netlify ularni allaqachon qurilgan deploy'ga qo'shmaydi.
 3. **Sayt manzili ma'lum bo'lgach `index.html` dagi uchta manzilni
    yangilang** — `og:url`, `og:image`, `twitter:image`. Hozir ular
-   `https://rustam-tugulgankun.netlify.app/` deb turibdi. Yangilanmasa
+   `https://ruslan-tugulgankun.netlify.app/` deb turibdi. Yangilanmasa
    Telegramdagi havola kartochkasi rasmsiz chiqadi.
 
 ## Mehmonlar daftari
