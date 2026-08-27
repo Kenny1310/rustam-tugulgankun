@@ -27,7 +27,7 @@ const PHOTOS = [
   { src: "img/01.jpg", cap: "Katta davra",        tag: "Jamoa",   cls: "shot--a" },
   { src: "img/02.jpg", cap: "Ish kunidan bir on", tag: "Jamoa",   cls: "shot--b" },
   { src: "img/03.jpg", cap: "Yonma-yon",          tag: "Jamoa",   cls: "shot--c" },
-  { src: "img/04.jpg", cap: "Hamkasblar bilan",   tag: "Jamoa",   cls: "shot--d" },
+  { src: "img/04.jpg", cap: "Bir safda",          tag: "Jamoa",   cls: "shot--d" },
   { src: "img/05.jpg", cap: "Hovlida",            tag: "Jamoa",   cls: "shot--e" },
   { src: "img/06.jpg", cap: "Yig'ilish",          tag: "Mehnat",  cls: "shot--g" },
   { src: "img/07.jpg", cap: "Bayram davrasi",     tag: "Davra",   cls: "shot--f" },
