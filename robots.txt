@@ -1,0 +1,11 @@
+# Robotlarga sahifani o'qishga ruxsat beramiz — aks holda Telegram,
+# WhatsApp va shunga o'xshashlar havola ko'rinishini yasay olmaydi.
+#
+# Google'dan yashirish bu yerda emas, netlify.toml dagi
+# "X-Robots-Tag: noindex" sarlavhasi orqali amalga oshiriladi.
+# Bu ishonchliroq: robots.txt bilan butunlay to'sib qo'yilsa,
+# Google noindex ni umuman ko'rmaydi va havolani baribir ro'yxatga
+# olib qo'yishi mumkin.
+
+User-agent: *
+Allow: /

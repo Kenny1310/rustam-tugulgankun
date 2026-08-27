@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rustam Mavlyanov — Tug'ilgan kun</title>
+<meta name="description" content="Rustam Mavlyanov. 27-avgust 1974. Ishchi hodimlaridan sovg'a.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#efe4d2">
+
+<!-- ====== Havola ko'rinishi (Telegram, WhatsApp, Facebook) ======
+     Manzillar to'liq bo'lishi shart — nisbiy manzil bu yerda ishlamaydi.
+     Sayt domeni o'zgarsa, quyidagi uchta manzilni ham yangilang. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tabriknoma">
+<meta property="og:locale" content="uz_UZ">
+<meta property="og:title" content="Rustam Mavlyanov — Tug'ilgan kuningiz bilan">
+<meta property="og:description" content="27-avgust 1974. Ishchi hodimlaringizdan sovg'a.">
+<meta property="og:url" content="https://rustam-tabrik.netlify.app/">
+<meta property="og:image" content="https://rustam-tabrik.netlify.app/img/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rustam Mavlyanov — tabriknoma">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rustam Mavlyanov — Tug'ilgan kuningiz bilan">
+<meta name="twitter:description" content="27-avgust 1974. Ishchi hodimlaringizdan sovg'a.">
+<meta name="twitter:image" content="https://rustam-tabrik.netlify.app/img/og.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Caveat:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ============ KIRISH ============
+     video/kirish.mp4 — 14 soniya: kamera suratga yaqinlashadi,
+     surat charm kitobga aylanadi, muqovada ism paydo bo'ladi.
+
+     img/cover.jpg — o'sha videoning AYNAN OXIRGI KADRI. Video
+     tugagach shu rasm ustiga chiqadi va video to'xtaydi. Ikkalasi
+     bir xil kadr bo'lgani uchun almashish ko'zga tashlanmaydi.
+
+     Yozuv videoning ichida — shuning uchun sayt ustidan hech
+     narsa yozmaydi. Butun muqova bosiladigan qilingan: dadangiz
+     halqani aniq nishonga olmasa ham, qayerni bossa ochiladi. -->
+<div class="intro" id="intro">
+  <div class="intro__stage">
+
+    <video class="intro__video" id="introVideo"
+           src="video/kirish.mp4"
+           muted playsinline preload="auto"
+           disablepictureinpicture></video>
+
+    <div class="cover" id="cover">
+      <img class="cover__img" src="img/cover.jpg" alt="Rustam Mavlyanov, 1974">
+
+      <div class="cover__shade" aria-hidden="true"></div>
+
+      <!-- Muqovadagi taxtacha bo'sh — yozuvni sayt chizadi.
+           Shunda harflar o'tkir bo'ladi va apostroflar buzilmaydi. -->
+      <div class="cover__plate">
+        <span class="cover__name">Rustam</span>
+        <span class="cover__name">Mavlyanov</span>
+      </div>
+      <p class="cover__foot">27-avgust 1974</p>
+
+      <button class="cover__open" id="coverOpen" type="button">
+        <span class="sr">Oching</span>
+      </button>
+
+      <span class="cover__cue" aria-hidden="true">
+        <span class="cover__ring">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#f8e7c6" stroke-width="1.4"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </span>
+        <span class="cover__label">Oching</span>
+      </span>
+
+    </div>
+
+    <!-- Avtomatik o'ynash to'silsa shu chiqadi (kam uchraydi, lekin
+         Telegram ichidagi brauzerda va quvvat tejash rejimida bo'ladi) -->
+    <button class="intro__start" id="introStart" type="button" hidden>
+      <span class="cover__ring" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="#f7e5c0" stroke="none"><path d="M8 5v14l11-7z"/></svg>
+      </span>
+      <span class="cover__label">Boshlash</span>
+    </button>
+
+    <button class="intro__btn intro__sound" id="introSound" type="button" hidden
+            aria-pressed="false">Ovoz</button>
+    <button class="intro__btn intro__skip"  id="introSkip"  type="button" hidden>O'tkazib yuborish</button>
+
+  </div>
+</div>
+
+<header class="topbar" id="topbar">
+  <span class="topbar__mark">E. I.</span>
+  <span class="topbar__meta" id="topbarDate"></span>
+</header>
+
+<main id="main">
+
+  <!-- ============ 1. TITUL VARAG'I ============ -->
+  <section class="titul" id="titul">
+    <p class="titul__eyebrow">Ishchi hodimlaringizdan</p>
+
+    <h1 class="titul__name" id="heroTitle" aria-label="Rustam Mavlyanov">
+      <span class="line"><span class="mask" data-word=""></span></span>
+      <span class="line"><span class="mask" data-word=""></span></span>
+    </h1>
+
+    <div class="titul__rule" aria-hidden="true"></div>
+
+    <p class="titul__meta">
+      <i id="heroDate"></i>
+      <i id="heroAge"></i>
+    </p>
+
+    <span class="titul__cue" aria-hidden="true"></span>
+  </section>
+
+  <div class="rule" aria-hidden="true"><i>&#9670;</i></div>
+
+  <!-- ============ 2. BAG'ISHLOV ============ -->
+  <section class="section dedication" id="bagishlov">
+    <p class="label" data-reveal><span>01</span> Bag'ishlov</p>
+    <p class="lead" id="lead"></p>
+    <p class="sign" data-reveal>Ishchi hodimlaringizdan sovg'a</p>
+  </section>
+
+  <!-- ============ 3. RAQAMLAR ============ -->
+  <section class="section" id="raqamlar">
+    <div class="facts">
+      <div class="fact" data-reveal>
+        <span class="fact__n" id="factYears">0</span>
+        <span class="fact__t">yil</span>
+      </div>
+      <div class="fact" data-reveal>
+        <span class="fact__n" id="factDays">0</span>
+        <span class="fact__t">kun</span>
+      </div>
+      <div class="fact" data-reveal>
+        <span class="fact__n" id="factFrom">0</span>
+        <span class="fact__t">yildan beri</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. ALBOM ============ -->
+  <section class="section" id="albom">
+    <p class="label" data-reveal><span>02</span> Albom</p>
+    <h2 class="h2" data-reveal>Bir jamoa bo'lib<br><em>o'tgan yillar</em></h2>
+    <div class="grid" id="grid"><!-- JS to'ldiradi --></div>
+  </section>
+
+  <!-- ============ 5. TILAKLAR ============ -->
+  <section class="section" id="tilaklar">
+    <p class="label" data-reveal><span>03</span> Tilaklar</p>
+
+    <ol class="wishlist">
+      <li data-reveal>
+        <span class="wishlist__n">01</span>
+        <div>
+          <h3>Sog'liq</h3>
+          <p>Eng avvalo — mustahkam sog'lik. Qolgan hamma narsa shuning ustiga quriladi.</p>
+        </div>
+      </li>
+      <li data-reveal>
+        <span class="wishlist__n">02</span>
+        <div>
+          <h3>Jamoa</h3>
+          <p>Yoningizdagi jamoa doim ahil bo'lsin. Yaxshi rahbar yaxshi jamoa yig'adi — buni har kuni ko'rib turibmiz.</p>
+        </div>
+      </li>
+      <li data-reveal>
+        <span class="wishlist__n">03</span>
+        <div>
+          <h3>Omad</h3>
+          <p>Boshlagan har bir ishingiz oxiriga yetsin, har bir shartnomangiz omadli kelsin.</p>
+        </div>
+      </li>
+      <li data-reveal>
+        <span class="wishlist__n">04</span>
+        <div>
+          <h3>Vaqt</h3>
+          <p>Yillar shoshilmasin. Eng yaxshi kunlaringiz hali oldinda bo'lsin.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ 6. MEHMONLAR DAFTARI ============ -->
+  <section class="section" id="daftar">
+    <p class="label" data-reveal><span>04</span> Mehmonlar daftari</p>
+    <h2 class="h2" data-reveal>Bu sahifaga <em>ismingizni</em> qoldiring</h2>
+
+    <form class="form" id="wishForm" novalidate>
+      <div class="field" data-reveal>
+        <label for="fName">Ismingiz</label>
+        <input type="text" id="fName" name="name" maxlength="40" autocomplete="name"
+               placeholder="Masalan: Sardor" required>
+      </div>
+
+      <div class="field" data-reveal>
+        <label for="fText">Tilagingiz</label>
+        <textarea id="fText" name="text" rows="4" maxlength="400"
+                  placeholder="Yurakdan chiqqan bir necha satr..." required></textarea>
+        <span class="counter"><span id="charCount">0</span>/400</span>
+      </div>
+
+      <!-- Robotlar uchun tuzoq: odam buni ko'rmaydi, bot to'ldiradi -->
+      <div class="hp" aria-hidden="true">
+        <label for="fSite">Saytingiz</label>
+        <input type="text" id="fSite" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" class="submit" id="submitBtn" data-reveal>
+        <span id="submitText">Daftarga yozish</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M5 12h14M13 6l6 6-6 6"/>
+        </svg>
+      </button>
+
+      <p class="form__note" id="formNote" data-reveal>Yozganingiz to'g'ridan-to'g'ri yetkaziladi.</p>
+    </form>
+
+    <p class="wishes__count" id="wishCount" aria-live="polite"></p>
+    <div class="wishes" id="wishes"></div>
+  </section>
+
+  <!-- ============ 7. OXIRGI SAHIFA ============ -->
+  <section class="section closing" id="oxiri" data-reveal>
+    <img class="closing__book" src="img/cover.jpg" alt="" aria-hidden="true">
+    <p class="closing__line">Biznesingizga<br><em>omad tilaymiz.</em></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer__name">Rustam Mavlyanov</p>
+  <p class="footer__year" id="footerYear"></p>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Rasm" hidden>
+  <button class="lightbox__close" id="lbClose" aria-label="Yopish">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Oldingi">&#8249;</button>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Keyingi">&#8250;</button>
+  <figure class="lightbox__figure">
+    <img id="lbImg" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+</div>
+
+<!-- ============ MUSIQA ============
+     Fayl: audio/fon.m4a. Boshqa qo'shiq qo'ymoqchi bo'lsangiz —
+     faylni audio/ ga tashlab, quyidagi src ni o'zgartiring.
+     Fayl bo'lmasa tugma ko'rinmaydi va sayt xatosiz ishlayveradi. -->
+<audio id="track" src="audio/fon.m4a" loop preload="metadata"></audio>
+
+<button class="music" id="musicBtn" aria-pressed="false" aria-label="Musiqani yoqish" hidden>
+  <span class="music__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>

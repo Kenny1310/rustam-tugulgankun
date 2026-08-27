@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rustam",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5181", "--directory", "C:\Users\Kenny\rustam"],
+      "port": 5181
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "eldor-tabrik",
+  "private": true,
+  "type": "module",
+  "description": "Tug'ilgan kun tabriknomasi. Saytning o'zi kutubxonasiz — bu fayl faqat Netlify funksiyasi uchun kerak.",
+  "dependencies": {
+    "@netlify/blobs": "^11.0.1"
+  }
+}
