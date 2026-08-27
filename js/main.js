@@ -8,8 +8,9 @@
    SOZLAMALAR — asosan shu blokni tahrirlaysiz
    --------------------------------------------------------- */
 const CONFIG = {
-  ism: "Ruslan",
-  familiya: "Mavlyanov",
+  // Hurmat yuzasidan o'zbekcha tartib: familiya, keyin ism va "aka"
+  ism: "Mavlyanov",
+  familiya: "Ruslan aka",
 
   // Tug'ilgan sana. oy: 1 = yanvar, 12 = dekabr
   tugilgan: { kun: 27, oy: 8, yil: 1974 },
