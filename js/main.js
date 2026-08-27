@@ -1,5 +1,5 @@
 /* =========================================================
-   Rustam Mavlyanov — tug'ilgan kun sahifasi
+   Ruslan Mavlyanov — tug'ilgan kun sahifasi
    Uslub: kirishda ochilgan kitobning ichi — qog'oz, siyoh, oltin.
    Sof JavaScript, tashqi kutubxonasiz.
    ========================================================= */
@@ -8,7 +8,7 @@
    SOZLAMALAR — asosan shu blokni tahrirlaysiz
    --------------------------------------------------------- */
 const CONFIG = {
-  ism: "Rustam",
+  ism: "Ruslan",
   familiya: "Mavlyanov",
 
   // Tug'ilgan sana. oy: 1 = yanvar, 12 = dekabr
@@ -33,7 +33,7 @@ const PHOTOS = [
   { src: "img/07.jpg", cap: "Bayram davrasi",     tag: "Davra",   cls: "shot--f" },
 ];
 
-const STORE_KEY = "tabrik:rustam-mavlyanov";
+const STORE_KEY = "tabrik:ruslan-mavlyanov";
 const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const OYLAR = ["yanvar","fevral","mart","aprel","may","iyun",
                "iyul","avgust","sentabr","oktabr","noyabr","dekabr"];
@@ -102,7 +102,7 @@ const Intro = (() => {
   const open  = $("#coverOpen");
   const start = $("#introStart");
 
-  const SEEN = "rustam:kirish";
+  const SEEN = "ruslan:kirish";
   let atCover = false;
   let entered = false;
 

@@ -145,7 +145,7 @@ export default async (req) => {
   // Sayt nomi ataylab yozilyapti: bitta botni bir nechta tabriknoma
   // bilan ishlatsangiz, qaysi saytdan kelganini darrov bilasiz.
   const xabar =
-    `🎉 <b>Yangi tilak</b> — Rustam Mavlyanov\n\n` +
+    `🎉 <b>Yangi tilak</b> — Ruslan Mavlyanov\n\n` +
     `👤 ${esc(ism)}\n\n` +
     `${esc(matn)}`;
 

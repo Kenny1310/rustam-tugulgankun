@@ -1,4 +1,4 @@
-# Rustam Mavlyanov — tug'ilgan kun sayti
+# Ruslan Mavlyanov — tug'ilgan kun sayti
 
 27-avgust 1974. Sof HTML/CSS/JS, hech qanday kutubxona yo'q.
 
